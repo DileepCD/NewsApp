@@ -9,14 +9,8 @@ The below are mandatory
 Angular 5/6/7 as front end
 
 ASP.NET Core as backend with SQL server
-
-CI/CD has to be implmented
-
+ 
 Authentication to be done by JWT
-
-End to end test cases [e2e] are compulsory
-
-Unit testing for back end is compulsory
 
 ## Development server
 
@@ -42,19 +36,6 @@ Run `npm run test` to execute both Mocha and angular test cases [Mocha] & [Karma
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
-
-## Docker Instructions
-
-In command prompt  
-Navigate to folder C:\Users\adminvm\Desktop\Dileep\Latest\Dileep.CD-newsapp-dotnet-boilerplate\frontend and run command docker build -t frotnend.  
-Navigate to folder C:\Users\adminvm\Desktop\Dileep\Latest\Dileep.CD-newsapp-dotnet-boilerplate\server and run command docker build -t authapp.  
-Navigate to folder C:\Users\adminvm\Desktop\Dileep\Latest\Dileep.CD-newsapp-dotnet-boilerplate\server. Rename the file to remove extension from DockerFile.newsapp to DockerFile.  
-Run command docker build -t newsapp.  
-
-These 3 steps will build corresponding Docker container.  
-
-Navigate to C:\Users\adminvm\Desktop\Dileep\Latest\Dileep.CD-newsapp-dotnet-boilerplate and run command docker-compose up.  
-This will start the application in Docker container. Go to localhost:4200 in browser. We should see the frontend application running there.  
 
 ## Further help
 
@@ -84,16 +65,3 @@ P.S :- You need to generate the API_KEY for the above endpoints and replace
 You need to signup to [NEWSAPI] (https://newsapi.org/register).
 
 - After registration, API key is generated for you.
-
-
-## Important points/instructions to be followed
-
-1.	Must have added all sprints in the same repository. Please don’t create any additional repository and keep pushing the changes into the repository reported in very first iteration.
-2.	Must add .gitignore file in your repository to avoid uploading any compiled/ third party binaries.
-3.	Must define the steps in README file to reproduce the images used for docker.
-4.	Must add your Mentor as developer in your repository.
-5.	Must close the issues after fixing and notify the respective Mentor through slack or mail.
-6.	You should change the launchurl property of the application to point to your API.
-7.	Use port number 8081 for API and 8089 for Authentication layer.
-8.	Code must be appropriately/descriptively commented in all layers.
-9.	Error/exception handling must be done to make it user friendly. There should not be any console logs in your application.
